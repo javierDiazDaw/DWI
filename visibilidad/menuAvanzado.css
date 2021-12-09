@@ -1,0 +1,13 @@
+
+*{margin:0;padding:0;}
+body{height:200vh}
+div{border: 1px solid red}
+.menu li {display:inline-block; margin-left:5px;}
+.menu {position:sticky;top:5px;background:greenyellow;}
+.menu > ul {text-align:center}
+.content>div{display:inline-block;box-sizing:border-box}
+.primary{width:70%;height:100%;vertical-align:top}
+.secondary{width:25%;}
+.footer{text-align:center}
+.header h1 {display:inline-block}
+img{vertical-align:middle}

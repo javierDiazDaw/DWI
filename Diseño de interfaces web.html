@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css" />
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    [class*="col-"] {
+      float: left;
+        
+    }
+
+    html {
+      font-family: "Lucida Sans", sans-serif;
+    }
+
+    .header {
+      background-color: greenyellow;
+      border: 1px solid black;
+      
+      padding: 15px;
+
+    }
+
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+
+    }
+
+    .menu li {
+      padding: 8px;
+      margin-bottom: 7px;
+      background-color: greenyellow;
+      color: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .menu li:hover {
+      background-color: greenyellow;
+    }
+
+    .aside {
+      background-color: greenyellow;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .footer {
+      background-color: greenyellow;
+      color: #black;
+      text-align: center;
+      font-size: 12px;
+      padding: 15px;
+    }
+
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+
+    @media only screen and (min-width: 600px) {
+      /* For tablets: */
+      .col-s-1 {width: 8.33%;}
+      .col-s-2 {width: 16.66%;}
+      .col-s-3 {width: 25%;}
+      .col-s-4 {width: 33.33%;}
+      .col-s-5 {width: 41.66%;}
+      .col-s-6 {width: 50%;}
+      .col-s-7 {width: 58.33%;}
+      .col-s-8 {width: 66.66%;}
+      .col-s-9 {width: 75%;}
+      .col-s-10 {width: 83.33%;}
+      .col-s-11 {width: 91.66%;}
+      .col-s-12 {width: 100%;}
+    }
+    @media only screen and (min-width: 768px) {
+      /* For desktop: */
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+    }
+
+
+
+    .menu li{
+      position:relative;
+      display:inline-block;
+      padding:5px;
+      margin-right:10px;
+      border: 1px solid black;
+      background-color: white;  
+    }
+
+    /* fotos */
+
+    .galeria {
+      
+      width: 220px;
+      height: 150px;
+      
+    }
+
+    /* contenedor fotos */
+    .fotos {
+      margin-left: 2%;
+      display:inline-block;
+      text-align: center;
+      border: 2px solid black;
+      margin-bottom: 20px;
+      border: 10px solid greenyellow;
+      border-radius: 10px;
+      background-color: greenyellow;
+
+      
+
+    }
+
+    .fotos:hover{
+
+      -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 18px 6px 15px 5px rgba(0,0,0,0); 
+      box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 18px 6px 15px 5px rgba(0,0,0,0);
+
+    }
+
+    .tipoFoto{
+      
+      flex-grow: 1;
+      /*height: 100px;*/
+    }
+
+
+    /* icono camara */
+
+    /i{font-size:40px;}
+    .fas{color:black;}
+    .fab{color:blue;}
+    span{margin-left:10px;}
+
+    /* flex */
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .galeria {
+      flex-grow: 1;
+      
+    }
+
+    /*modo oscuro*/
+
+    body {
+  background-color: white;
+  color: black;
+  }
+  @media screen and (prefers-color-scheme: dark) {
+    body {
+      background-color: black;
+      color: grey;
+    }
+
+
+
+}
+
+    
+    
+
+    </style>
+    </head>
+    <body>
+    <div class="row">
+      <div class="header col-12">
+        <div class="col-4 col-s-12 menu">
+          <h1>Sr. FOTOS <i class="fas fa-camera-retro"></i></h1>
+        </div>
+        <div class="col-8 col-s-12 menu">
+          <ul>
+            <li><a href="webCompleta.html">Inicio</a></li>
+            <li><a href="webCompletaFotos.html">Tipos</a></li>
+            <li><a href="webCompletaTienda.html">Tienda</a></li> 
+            <li><a href="webCompletaOficio.html">Oficio</a></li>
+          </ul>
+        </div>        
+      </div>
+        
+    </div>
+    <div class="row">
+      
+        <div class="col-9 col-s-9">
+          <h1>Tipos de fotografía</h1>
+          <p>El mundo de la fotografía es muy amplio. Te explicaremos los diferentes tipos que existen:</p>
+
+          <div class="container"> 
+          <div class = "fotos">            
+            <img class = "galeria" src="./images/retrato.jpg" >
+            <h3 class = "tipoFoto">Retrato</h3>
+          </div>
+          <div class = "fotos">
+            <img class = "galeria"src="https://bptfotografia.com/wp-content/uploads/2021/07/foto-de-un-paisaje-1024x683.jpg">
+            <h3 class = "tipoFoto">Paisaje</h3>
+          </div>
+          <div class = "fotos"> 
+            <img class = "galeria"src="./images/tematica.jpg">
+            <h3 class = "tipoFoto">Tematica</h3>
+          </div>
+          <div class = "fotos"> 
+            <img class = "galeria"src="https://vinti7.com/wp-content/uploads/2016/01/fotografia-blanco-y-negro-4.jpg">
+            <h3 class = "tipoFoto">Blanco y negro</h3>
+          </div>
+          <div class = "fotos">            
+            <img class = "galeria" src="http://d2f29brjr0xbt3.cloudfront.net/163_macroundup/thomas4.jpg" >
+            <h3 class = "tipoFoto">Macro</h3>
+          </div>
+          <div class = "fotos">
+            <img class = "galeria"src="https://i0.wp.com/clubdefotografia.net/wp-content/uploads/2013/06/fotograf%C3%ADa-nocturna.jpg?fit=820%2C525&ssl=1">
+            <h3 class = "tipoFoto">Nocturno</h3>
+          </div>
+          <div class = "fotos"> 
+            <img class = "galeria"src="https://estaticos-cdn.prensaiberica.es/clip/05d20bb5-f64d-4cbe-a607-149bed3d7f7f_16-9-aspect-ratio_default_0.jpg">
+            <h3 class = "tipoFoto">Animales</h3>
+          </div>
+          <div class = "fotos"> 
+            <img class = "galeria"src="https://foto321.com/blog/wp-content/uploads/2021/01/Felix-Sanchez-Arrazola.jpg">
+            <h3 class = "tipoFoto">Deportes</h3>            
+          </div>
+          <div class = "fotos">
+            <img class = "galeria"src="https://agenciabeefree.com/wp-content/uploads/2021/02/La-fotografia-publicitaria-vs-fotografia-de-producto-scaled.jpg">
+            <h3 class = "tipoFoto">Publicitaria</h3>
+          </div>
+        </div>          
+        </div>
+        <div class="col-3 col-s-12">
+          <div class="aside">
+            <h2>Más información</h2>
+            <p><a href="https://es.wikipedia.org/wiki/Fotograf%C3%ADa">Click aquí</a></p>
+            <h2>Instagram</h2>
+            <p><a href="https://www.instagram.com/kb_photostudio_/">Click aquí</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Resize the browser window to see how the content respond to the resizing.</p>
+    </div>
+  </body>
+</html>
+
+
+webCompletaFotos.html
+Mostrando webCompletaFotos.html.

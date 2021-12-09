@@ -1,0 +1,20 @@
+body{
+  height:200vh;
+  background: rgb(255,255,255);
+background: linear-gradient(186deg, rgba(255,255,255,1) 0%, rgba(70,70,125,1) 63%, rgba(0,212,255,1) 100%);
+}
+nav{position:sticky;top:5px}
+li{display:inline-block;
+    margin-right:10px;
+    border:1px solid blue;
+    padding:5px;
+    position:relative;
+    text-align:center}
+    
+a{text-decoration:none}
+
+li:hover{top:-5px}
+/*li:hover{width:100px}
+li:hover{border:2px solid blue}
+li:hover{background:beige}
+li:hover a{color:black}

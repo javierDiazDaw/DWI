@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+  margin-top: 5px;
+  background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,150,85,1) 70%, rgba(0,150,85,1) 100%);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #009655;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+  text-align: center;
+}
+.right {
+  background-color: #009655;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+.imagenfurbo{
+    display: inline-block;
+    
+}
+.segundaimagen{
+    display: inline-block;
+    text-align: center;
+}
+.icon i{
+color: black;
+}
+a{
+  top: 5px;
+  border-radius: 20px;
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#009655;padding:15px;">
+    <img style="vertical-align: middle; width: 100px;" src="https://ybcc.es/wp-content/uploads/2018/10/33Escudo_BET.png" >
+    <h1 class="imagenfurbo">Real Betis Balompié</h1>
+</div>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Inicio</a>
+    <a href="noticias.html">Noticias</a>
+    <a href="femenino.html">Femenino</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="tienda.html">Tienda</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+  <div style="padding-left:16px">
+    <h2>Los partidos más destacados</h2>
+    
+  </div>
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">Real Betis 4-1 Valencia</div>
+    <div class="menuitem">Atlético de Madrid 16:15 Real Betis</div>
+    <div class="menuitem">Real Betis 21:00 Sevilla</div>
+    <div class="menuitem">Elche 17:00 Real Betis</div>
+  </div>
+
+  <div class="main">
+    <h2>NOTICIAS FEMENINO</h2>
+    <h3>Real Betis Féminas - Athletic Club de Bilbao, domingo 31 de octubre a las 11:00 horas</h3>
+    <p style="text-align: left;">El Real Betis Féminas ya conoce fecha y hora para el próximo duelo liguero. Su rival, tal y como ya se conocía, será el Athletic Club de Bilbao.
+
+        El partido tendrá luchar el próximo domingo 31 de octubre a las 11:00 horas en la Ciudad Deportiva Luis del Sol.</p>
+    <div class="segundaimagen"><img style="border-radius: 20px; width: 60%;" src="https://thumb.besoccerapps.com/rbetis/img_news/29/29219.jpg?v=1&size=1050x590t"></div>
+    <br><br><br>
+    <h3>José Juan Luque renuncia a su cargo de entrenador del filial del Real Betis Féminas</h3>
+    <p style="text-align: left;">El técnico José Juan Luque ha comunicado su renuncia al cargo de entrenador del filial del Real Betis Féminas, por lo que pone fin de este modo fin a una brillante etapa al frente del segundo equipo femenino verdiblanco. 
+        Su sustituto será Miguel Roda, hasta ahora segundo entrenador, y que pasará a llevar las riendas del equipo con Adrián Fernández de la Fuente como segundo. 
+        Luque llegó al Club en la temporada 2018/19 con el filial en categoría provincial. Tras un brillante primer puesto en el grupo sevillano, logró el ascenso a Primera Nacional tras imponerse al Almería en el playoff y, ya el pasado año, tras dominar durante dos temporadas la categoría, fue capaz de llevar al Real Betis Féminas B a Reto Iberdrola después de superar al Victoria CF.
+        El Real Betis quiere agradecer a José Juan Luque el trabajo realizado durante estas temporadas y le desea suerte en sus próximos retos personales y profesionales.</p>
+    <div class="segundaimagen"><img style="border-radius: 20px; width: 60%;" src="https://thumb.besoccerapps.com/rbetis/img_news/29/29070.jpg?v=1&size=1050x590t"></div>
+  </div>
+
+  <div class="right">
+    <h2>Correo Electrónico</h2>
+    <p>info@realbetis.es</p>
+    <h2>Teléfono</h2>
+    <p>+34 955 463 955</p>
+    <h2>Ubicación</h2>
+    <p>Avda. de Heliópolis, s/n 41012 Sevilla</p>
+  </div>
+</div>
+
+
+<div style="background-color:#009655;text-align:center;padding:20px;margin-top:7px;font-size:12px;"> <p>© REAL BETIS BALOMPIÉ. Esta página web es la única oficial del Real Betis Balompié. Todos los derechos reservados.</p></div>
+
+</body>
+</html>

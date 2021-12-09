@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: greenyellow;
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: greenyellow;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: lightgreen;
+}
+
+.aside {
+  background-color: greenyellow;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: greenyellow;
+  color: #black;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+
+
+.menu li{
+  position:relative;
+  display:inline-block;
+  padding:5px;
+  margin-right:10px;
+  border: 1px solid black;
+  background-color: white;  
+}
+
+/* contenedor fotos */
+    .fotos {
+      margin-left: 2%;
+      display:inline-block;
+      text-align: center;
+      border: 2px solid black;
+      margin-bottom: 20px;
+      border: 10px solid greenyellow;
+      border-radius: 10px;
+      background-color: greenyellow;
+
+      
+
+    }
+
+.fotos:hover{
+
+      -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 18px 6px 15px 5px rgba(0,0,0,0); 
+      box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 18px 6px 15px 5px rgba(0,0,0,0);
+
+    }
+
+
+/* flex */
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+ /* fotos */
+
+    .galeria {
+      
+      width: 200px;
+      height: 150px;
+      
+    }
+
+    .galeria {
+      flex-grow: 1;
+      
+    }
+
+
+</style>
+    </head>
+    <body>
+    <div class="row">
+      <div class="header col-12">
+        <div class="col-4 col-s-12 menu">
+          <h1>Sr. FOTOS <i class="fas fa-camera-retro"></i></h1>
+        </div>
+        <div class="col-8 col-s-12 menu">
+          <ul>
+            <li><a href="webCompleta.html">Inicio</a></li>
+            <li><a href="webCompletaFotos.html">Tipos</a></li>
+            <li><a href="webCompletaTienda.html">Tienda</a></li> 
+            <li><a href="webCompletaOficio.html">Oficio</a></li>
+          </ul>
+        </div>        
+      </div>        
+    </div>
+
+<div class="row" border = 2 px>
+
+
+    <div class="col-9 col-s-9">
+      <h1>Tienda oficial</h1>
+      <p>Aquí podrás ver y comprar todos los productos disponibles.</p>
+      <div class ="container">
+        <div class = "fotos">
+          <img class = "galeria" src="https://todo-fotografia.com/wp-content/uploads/2019/02/Panasonic-Lumix-DC-FZ1000-II.jpg" >
+          <h3>Cámaras</h3>
+        </div>
+        <div class = "fotos">          
+          <img class = "galeria"src="https://www.ecipic.com/material/blog/tecnologia/len-1024x682.jpg">
+          <h3>Objetivos</h3>
+        </div>
+        <div class = "fotos">
+          <img class = "galeria"src="https://static.fnac-static.com/multimedia/Images/ES/NR/65/13/55/5575525/1540-1.jpg">
+          <h3>Accesorios</h3>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="col-3 col-s-12">
+      <div class="aside">
+        <h2>Más información</h2>
+        <p><a href="https://es.wikipedia.org/wiki/Fotograf%C3%ADa">Click aquí</a></p>
+        <h2>Instagram</h2>
+        <p><a href="https://www.instagram.com/kb_photostudio_/">Click aquí</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>
+
+

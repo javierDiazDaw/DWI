@@ -1,0 +1,37 @@
+*{padding:0;margin:0}
+li{
+  list-style-type:none;
+}
+.nav{
+  
+  margin:10px;
+  width:100%;
+  position:relative;
+}
+.nav > li{
+  position:relative;
+  display:inline-block;
+  padding:5px;
+  margin-right:10px;
+  border: 1px solid black;
+  
+}
+.nav a{
+  text-decoration:none;
+}
+.nav a:hover{
+  color:#aaa; 
+}
+.nav ul{
+  position:absolute;
+  display:none;
+  
+  top:30px;
+  background-color:green;
+}
+.nav ul a{
+  white-space: nowrap;
+}
+.nav li:hover ul {
+  display:block;
+}
