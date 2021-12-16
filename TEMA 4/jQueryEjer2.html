@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.5.1.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+        $(document).ready(function(){
+            var con = 0;
+          $(".cuadrado").click(function(){
+              var ancho = Math.floor(Math.random()*300) + 1;
+              var alto = Math.floor(Math.random()*300) + 1;
+              var arriba = Math.floor(Math.random()*500) + 1;
+              var derecha = Math.floor(Math.random()*500) + 1;
+              con ++;
+
+            $(".cuadrado").animate({
+                top: arriba+ 'px',
+                left: derecha+ 'px',
+                height: alto+ 'px',
+                width: ancho+ 'px'});
+            document.getElementById("mostrar").innerHTML=con;
+          });
+        });
+        </script> 
+</head>
+<body>
+    <div><p>Has pulsado <span id = "mostrar"></span> veces</p></div>   
+    <div class = "cuadrado" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+</body>
+</html>
