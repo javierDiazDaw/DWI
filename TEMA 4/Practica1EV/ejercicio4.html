@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <style>
+
+        
+            .circulo {
+        width: 100px;
+        height: 100px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: #5cb85c;
+}
+        .circulo.horizTranslate {
+        animation-direction: alternate;
+        transform: rotate(50deg);
+        }
+    </style>
+
+    <script>
+
+        var circuloOne = document.getElementsByClassName('circulo')[0];
+
+        document.getElementsByClassName('toggleButton')[0].onclick = function() {
+        if(this.innerHTML === 'Play') 
+        { 
+            this.innerHTML = 'Pause';
+            circuloOne.classList.add('horizTranslate');
+        } else {
+            this.innerHTML = 'Play';
+            var computedStyle = window.getComputedStyle(circuloOne),
+                marginLeft = computedStyle.getPropertyValue('margin-left');
+            circuloOne.style.marginLeft = marginLeft;
+            circuloOne.classList.remove('horizTranslate');    
+        }  
+        }
+
+    </script>
+
+</head>
+<body>
+    <div class='circulo'></div> 
+    <button class='toggleButton'>Play</button>
+</body>
+</html>

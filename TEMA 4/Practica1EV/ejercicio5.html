@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    img {
+        width: 400px;
+        
+    }
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+        
+                
+      }
+
+      .cuadro{
+        border: 3px solid black;
+        background-color: blue;
+        height: 280px;
+      }
+
+      .cuadro2{        
+       
+        background-color: blueviolet;
+     }
+
+     
+
+     
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script>
+    $(document).ready(function(){
+       
+        $(".cuadro").on({
+            mouseenter: function(){
+                $(this).addClass("cuadro2");
+            },
+            mouseleave: function(){
+                $(this).removeClass("cuadro2");
+            }, 
+        });
+        
+        $(".cuadro imgyy").click(function(){
+             $(this).animate({      
+                height: '0px',
+      
+        });
+        });
+        
+    });    
+</script>
+<body>
+     
+      <div class="wrapper">
+        <div class="cuadro">
+            <img src="imagenes/proteger-a-los-animales.jpg" alt="">
+            <div class = "nombre">nombre 1</div>
+        </div>  <div class="cuadro">
+            <img src="imagenes/proteger-a-los-animales.jpg" alt="">
+            <div class = "nombre">nombre 2</div>
+        </div>  <div class="cuadro">
+            <img src="imagenes/proteger-a-los-animales.jpg" alt="">
+            <div class = "nombre">nombre 3</div>
+        </div>  <div class="cuadro">
+            <img src="imagenes/proteger-a-los-animales.jpg" alt="">
+            <div class = "nombre">nombre 4</div>
+        </div>  <div class="cuadro">
+            <img src="imagenes/proteger-a-los-animales.jpg" alt="">
+            <div class = "nombre">nombre 5</div>
+        </div>  <div class="cuadro">
+            <img src="imagenes/proteger-a-los-animales.jpg" alt="">
+            <div class = "nombre">nombre 6</div>
+        </div>  <div class="cuadro">
+            <img src="imagenes/proteger-a-los-animales.jpg" alt="">
+            <div class = "nombre">nombre 7</div>
+        </div>  <div class="cuadro">
+            <img src="imagenes/proteger-a-los-animales.jpg" alt="">
+            <div class = "nombre">nombre 8</div>
+        </div>  <div class="cuadro">
+            <img src="imagenes/proteger-a-los-animales.jpg" alt="">
+            <div class = "nombre">nombre 9</div>
+        </div>        
+      </div>
+</body>
+</html>
