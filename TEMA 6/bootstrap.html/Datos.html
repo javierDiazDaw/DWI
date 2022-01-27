@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"> </script>
-    <script type="text/javascript" src= "script.js"></script>
+    
     <title>Datos</title>
     <style>#logo {width: 80px;}</style>
 </head>
@@ -39,7 +39,9 @@
                         <button type="button" class="btn btn-outline-success me-2">Eventos</button>
                       </li>
                       <li class="nav-item">
-                        <button type="button" class="btn btn-outline-success me-2">Servicios</button>
+                        <form method="get" action="http://localhost/DWI/TEMA%206/bootstrap.html/Login.html">
+                          <button type="submit" class="btn btn-outline-success me-2 ">RRPP</button>
+                        </form>
                       </li>
                       <li class="nav-item">
                         <button type="button" class="btn btn-outline-success me-5">Contacto</button>
@@ -67,102 +69,209 @@
         </div>        
       <!--Datos del cliente-->
       <div class = "row">
-        <div class = "col-12 text-center mb-4 ">
-          <div class="card p-3 mb-4" >
-            <div class="card-body">
-              <h2 class="card-title text-success mb-5">DATOS DEL ASISTENTE</h2>
-              <div class="input-group mb-3">
-                <span class="input-group-text" style="width: 118px;" id="basic-addon1">Nombre</span>
-                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-              </div>
-              <div class="input-group mb-3">
-                <span class="input-group-text" style="width: 118px;" id="basic-addon1">Apellidos</span>
-                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-              </div>
-              <div class="input-group mb-3">
-                <span class="input-group-text" style="width: 118px;" id="basic-addon1">Email</span>
-                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-              </div> 
-              <div class="input-group mb-3">
-                <span class="input-group-text">Comentarios</span>
-                <textarea class="form-control" aria-label="With textarea"></textarea>
-              </div>
-
-
-              <form class="row g-3 needs-validation" novalidate>
-                <div class="col-md-4">
-                  <label for="validationCustom01" class="form-label">First name</label>
-                  <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                  <div class="valid-feedback">
-                    Looks good!
+        <div class = "col-12 text-center bg-light card p-4 mb-2 ">
+          <div class="card p-4 mb-2 bg-dark text-light" >
+          <div class="row g-5 card-body">
+            <div class="col-md-5 col-lg-4 order-md-last">
+              <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-primary">Tu carrito</span>
+                <span class="badge bg-primary rounded-pill">3</span>
+              </h4>
+              <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Nombre del evento</h6>
+                    <small class="text-muted">Dub Elements + Friends</small>
+                  </div>                  
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Tipo de entrada</h6>
+                    <small class="text-muted">General</small>
                   </div>
-                  <label for="validationCustom02" class="form-label">Last name</label>
-                  <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                  <div class="valid-feedback">
-                    Looks good!
+                  <span class="text-muted">8€</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Gastos de entrada</h6>
+                    <small class="text-muted">General</small>
                   </div>
-                </div>                
-                <div class="col-md-4">
-                  <label for="validationCustom02" class="form-label">Last name</label>
-                  <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                  <div class="valid-feedback">
-                    Looks good!
+                  <span class="text-muted">2€</span>
+                </li>                
+                <li class="list-group-item d-flex justify-content-between bg-light">
+                  <div class="text-success">
+                    <h6 class="my-0">Código de promoción</h6>
+                    <small>Día del espectador</small>
                   </div>
-                </div>
-                <div class="col-md-4">
-                  <label for="validationCustomUsername" class="form-label">Username</label>
-                  <div class="input-group has-validation">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                    <div class="invalid-feedback">
-                      Please choose a username.
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <label for="validationCustom03" class="form-label">City</label>
-                  <input type="text" class="form-control" id="validationCustom03" required>
-                  <div class="invalid-feedback">
-                    Please provide a valid city.
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <label for="validationCustom04" class="form-label">State</label>
-                  <select class="form-select" id="validationCustom04" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    Please select a valid state.
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <label for="validationCustom05" class="form-label">Zip</label>
-                  <input type="text" class="form-control" id="validationCustom05" required>
-                  <div class="invalid-feedback">
-                    Please provide a valid zip.
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                      Agree to terms and conditions
-                    </label>
-                    <div class="invalid-feedback">
-                      You must agree before submitting.
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button class="btn btn-primary" type="submit">Submit form</button>
+                  <span class="text-success">−3€</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <strong>Pago Total</strong>
+                  <strong>7€</strong>
+                </li>
+              </ul>
+      
+              <form class="card p-2">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Código de promoción">
+                  <button type="submit" class="btn btn-secondary text-light">Acceder</button>
                 </div>
               </form>
-              
-
-                                                            
             </div>
-          </div>
+            <div class="col-md-7 col-lg-8">
+              <h4 class="mb-3 text-light">Datos del asistente</h4>
+              <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label for="firstName" class="form-label text-light">Nombre</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Introduzca su nombre.
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-6">
+                    <label for="lastName" class="form-label text-light">Apellidos</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Introduzca sus apellidos.
+                    </div>
+                  </div>
+                  
+                  <div class="col-12">
+                    <label for="username" class="form-label ">Email</label>
+                    <div class="input-group has-validation">                      
+                      <input type="text" class="form-control" id="username" required>
+                      <span class="input-group-text">@</span>
+                      <input type="text" class="form-control" id="username" placeholder="gmail.com" required>
+                    <div class="invalid-feedback">
+                        Introduzca un email válido.
+                      </div>
+                    </div>
+                  </div>
+      
+                        
+                  <div class="col-12">
+                    <label for="address" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="address" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Introduzca una dirección válida.
+                    </div>
+                  </div>      
+                  
+      
+                  <div class="col-md-5">
+                    <label for="country" class="form-label ">Country</label>
+                    <select class="form-select" id="country" required>
+                      <option value="">Elige tu país</option>
+                      <option>Alemania</option>
+                      <option>España</option>
+                      <option>Francia</option>
+                      <option>Portugal</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Seleccione su país.
+                    </div>
+                  </div>
+      
+                  <div class="col-md-4">
+                    <label for="provincia" class="form-label ">Provincia</label>
+                    <select class="form-select" id="provincia" required>
+                      <option value="">Elige tu provincia</option>
+                      <option>Almería</option>
+                      <option>Cádiz</option>
+                      <option>Córdoba</option>
+                      <option>Granada</option>
+                      <option>Huelva</option>
+                      <option>Jaén</option>
+                      <option>Málaga</option>
+                      <option>Sevilla</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Introduzca su provincia.
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="codigo" class="form-label">Código postal</label>
+                    <input type="text" class="form-control" id="codigo" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Introduzca un código postal válido.
+                    </div>
+                  </div>
+                </div>
+      
+                <hr class="my-4">
+      
+                <div class="form-check text-start">
+                  <input type="checkbox" class="form-check-input " id="same-address">
+                  <label class="form-check-label text-left" for="same-address">La dirección de envío es la misma que mi dirección de facturación</label>
+                </div>
+      
+                <div class="form-check text-start">
+                  <input type="checkbox" class="form-check-input" id="save-info">
+                  <label class="form-check-label" for="save-info">Guardar esta información para la próxima vez</label>
+                </div>
+      
+                <hr class="my-4">
+      
+                <h4 class="mb-3">Pago</h4>
+      
+                <div class="my-3 text-start">
+                  <div class="form-check">
+                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                    <label class="form-check-label" for="credit">Tarjeta de crédito</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                    <label class="form-check-label" for="debit">Tarjeta de débito</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                    <label class="form-check-label" for="paypal">PayPal</label>
+                  </div>
+                </div>
+      
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <label for="cc-name" class="form-label">Titular de la tarjeta</label>
+                    <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                    <small class="text-muted">Nombre completo</small>
+                    <div class="invalid-feedback">
+                      Campo obligatorio requerido.
+                    </div>
+                  </div>
+      
+                  <div class="col-md-6">
+                    <label for="cc-number" class="form-label">Número de tarjeta</label>
+                    <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Campo obligatorio requerido.
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="cc-expiration" class="form-label">Validez</label>
+                    <input type="text" class="form-control" id="cc-expiration" placeholder="mm/aa" required>
+                    <div class="invalid-feedback">
+                      Datos de validez requeridos.
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="cc-cvv" class="form-label">CVV</label>
+                    <input type="text" class="form-control" id="cc-cvv" placeholder="xxx" required>
+                    <div class="invalid-feedback">
+                      Código de seguridad requeridos.
+                    </div>
+                  </div>
+                </div>
+      
+                <hr class="my-4">
+      
+                <button class="btn-success btn-lg" style="border-radius:30px" type="submit">Confirmar Compra</button>
+              </form>
+          </div>    
         </div>
     </div>                 
   </div>
@@ -181,5 +290,6 @@
         </footer>
     </div>
 </div>
+<script type="text/javascript" src= "script.js"></script>
 </body>
 </html>
